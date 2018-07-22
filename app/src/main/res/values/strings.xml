@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PaddyPal</string>
+    <string name="CLOUD_API">AIzaSyCtcfBvVdVxQw6OwqeyZvANk1QoElJnISo</string>
+    <string name="BASE_URL">http://173.82.212.198:8095/</string>
+</resources>
