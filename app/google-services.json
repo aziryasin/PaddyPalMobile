@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "660693995499",
+    "firebase_url": "https://paddypalchat.firebaseio.com",
+    "project_id": "paddypalchat",
+    "storage_bucket": "paddypalchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660693995499:android:4c6803d398256576",
+        "android_client_info": {
+          "package_name": "com.paddypal.azir.paddypal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660693995499-b5fotmicrq219uj8e49586o2ehrl95v3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paddypal.azir.paddypal",
+            "certificate_hash": "2974d663a13b6f8e947402cd607dd46fa5138801"
+          }
+        },
+        {
+          "client_id": "660693995499-bu2qs26hfs8e3vvt6t3mna1fhl4oscqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQh3l_LOG6A7Gu60aReZfIeYIBpkk8laU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660693995499-bu2qs26hfs8e3vvt6t3mna1fhl4oscqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

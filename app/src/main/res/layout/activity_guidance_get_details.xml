@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="343dp"
+        android:layout_height="513dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/per42black"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="261dp"
+                android:layout_height="91dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/regfont"
+                android:gravity="center"
+                android:text="Please set your farm details"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/cropTypesList"
+                android:layout_width="282dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/regfont"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:ms_background_color="@color/per54black"
+                app:ms_hint="please select a age group" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/regfont"
+                android:text="Paddy Age group:"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/cropTypesList"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/regfont"
+                android:text="Starting date of seeding:"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/startDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cropTypesList" />
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="279dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="date"
+                app:layout_constraintBottom_toTopOf="@+id/BtnNext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                android:textAlignment="center"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/BtnNext"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                app:cardBackgroundColor="#0eb224"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/startDate">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/regfont"
+                    android:text="Next"
+                    android:textSize="20sp" />
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

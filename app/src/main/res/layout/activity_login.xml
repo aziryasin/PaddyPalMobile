@@ -4,33 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/paddy_blur"
+    android:background="@drawable/login_back"
     android:scrollbarAlwaysDrawVerticalTrack="true"
     tools:layout_editor_absoluteY="25dp">
 
-    <RelativeLayout
+    <android.support.v7.widget.CardView
         android:id="@+id/relativeLayout"
-        android:layout_width="377dp"
-        android:layout_height="400dp"
+        android:layout_width="330dp"
+        android:layout_height="441dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/per54black"
         android:elevation="4dp"
         android:padding="20dp"
+        app:cardBackgroundColor="#0F00FF00"
+        app:cardCornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_profile_photo"
-        app:layout_constraintVertical_bias="0.0"
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="343dp"
-            android:layout_height="371dp"
-            android:layout_centerHorizontal="true"
+            android:layout_height="405dp"
             android:paddingTop="30dp">
 
             <android.support.design.widget.TextInputLayout
@@ -43,8 +41,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/txtUserNameLog"
@@ -69,9 +66,8 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-                app:passwordToggleEnabled="true"
                 app:passwordToggleDrawable="@drawable/toggle_pass"
-                >
+                app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/txtPasswordLog"
@@ -83,26 +79,24 @@
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:singleLine="true"
-                    android:textSize="20sp"
-                    />
+                    android:textSize="20sp" />
             </android.support.design.widget.TextInputLayout>
 
             <TextView
                 android:id="@+id/txtForgot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
+                android:fontFamily="@font/regfont"
                 android:paddingTop="5dp"
                 android:text="Forgot Password?"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@+id/BtnLogin"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.954"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-                app:layout_constraintVertical_bias="0.948" />
+                app:layout_constraintHorizontal_bias="0.951"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
             <android.support.v7.widget.CardView
@@ -110,15 +104,15 @@
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_margin="22dp"
+                android:layout_marginBottom="4dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:background="#d67601"
                 android:clickable="true"
-                app:cardBackgroundColor="#d67601"
+                app:cardBackgroundColor="#0eb224"
                 app:cardCornerRadius="25dp"
                 app:layout_constraintBottom_toTopOf="@+id/BtnRegister"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
@@ -126,24 +120,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/regfont"
                     android:text="Sign in"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/regfont"/>
+                    android:textSize="20sp" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:id="@+id/BtnRegister"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:background="#d67601"
                 android:clickable="true"
-                app:cardBackgroundColor="#d67601"
+                app:cardBackgroundColor="#0eb224"
                 app:cardCornerRadius="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
@@ -151,25 +144,42 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/regfont"
                     android:text="Register"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/regfont"/>
+                    android:textSize="20sp" />
             </android.support.v7.widget.CardView>
+
+            <CheckBox
+                android:id="@+id/cboxRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/regfont"
+                android:text="Remember Me"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtForgot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.901"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
 
         </android.support.constraint.ConstraintLayout>
-    </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
-    <ImageButton
-        android:id="@+id/user_profile_photo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/paddy_text"
-        android:elevation="4dp"
-        android:src="@drawable/ic_user"
+        android:layout_marginTop="8dp"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
